@@ -4,7 +4,7 @@
 #
 Name     : perl-IO-Socket-Socks
 Version  : 0.74
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/O/OL/OLEG/IO-Socket-Socks-0.74.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OL/OLEG/IO-Socket-Socks-0.74.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libi/libio-socket-socks-perl/libio-socket-socks-perl_0.74-1.debian.tar.xz
@@ -78,7 +78,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/IO/Socket/Socks.pm
+/usr/lib/perl5/vendor_perl/5.28.0/IO/Socket/Socks.pm
 
 %files dev
 %defattr(-,root,root,-)
