@@ -4,7 +4,7 @@
 #
 Name     : perl-IO-Socket-Socks
 Version  : 0.74
-Release  : 4
+Release  : 5
 URL      : https://cpan.metacpan.org/authors/id/O/OL/OLEG/IO-Socket-Socks-0.74.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OL/OLEG/IO-Socket-Socks-0.74.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libi/libio-socket-socks-perl/libio-socket-socks-perl_0.74-1.debian.tar.xz
