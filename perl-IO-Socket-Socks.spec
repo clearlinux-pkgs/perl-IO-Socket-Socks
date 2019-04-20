@@ -4,11 +4,11 @@
 #
 Name     : perl-IO-Socket-Socks
 Version  : 0.74
-Release  : 10
+Release  : 11
 URL      : https://cpan.metacpan.org/authors/id/O/OL/OLEG/IO-Socket-Socks-0.74.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OL/OLEG/IO-Socket-Socks-0.74.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libi/libio-socket-socks-perl/libio-socket-socks-perl_0.74-1.debian.tar.xz
-Summary  : 'Provides a way to create socks client or server both 4 and 5 version.'
+Summary  : Provides a way to create socks client or server both 4 and 5 version
 Group    : Development/Tools
 License  : LGPL-2.1
 Requires: perl-IO-Socket-Socks-license = %{version}-%{release}
@@ -22,6 +22,7 @@ while behaving like a regular socket as much as possible.
 Summary: dev components for the perl-IO-Socket-Socks package.
 Group: Development
 Provides: perl-IO-Socket-Socks-devel = %{version}-%{release}
+Requires: perl-IO-Socket-Socks = %{version}-%{release}
 
 %description dev
 dev components for the perl-IO-Socket-Socks package.
@@ -40,7 +41,7 @@ license components for the perl-IO-Socket-Socks package.
 cd ..
 %setup -q -T -D -n IO-Socket-Socks-0.74 -b 1
 mkdir -p deblicense/
-mv %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/IO-Socket-Socks-0.74/deblicense/
+cp -r %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/IO-Socket-Socks-0.74/deblicense/
 
 %build
 export http_proxy=http://127.0.0.1:9/
