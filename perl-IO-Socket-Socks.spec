@@ -4,7 +4,7 @@
 #
 Name     : perl-IO-Socket-Socks
 Version  : 0.74
-Release  : 12
+Release  : 13
 URL      : https://cpan.metacpan.org/authors/id/O/OL/OLEG/IO-Socket-Socks-0.74.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OL/OLEG/IO-Socket-Socks-0.74.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libi/libio-socket-socks-perl/libio-socket-socks-perl_0.74-1.debian.tar.xz
@@ -77,7 +77,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-IO-Socket-Socks
-cp %{_builddir}/IO-Socket-Socks-0.74/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-IO-Socket-Socks/80ffcbf4dda8583a3a2797d95daf3cf575f62376
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-IO-Socket-Socks/80ffcbf4dda8583a3a2797d95daf3cf575f62376
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -101,4 +101,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/IO/Socket/Socks.pm
+/usr/lib/perl5/vendor_perl/5.30.2/IO/Socket/Socks.pm
